@@ -16,5 +16,5 @@ public interface PokemonService {
                 @Query("limit") int limit,
                 @Query("offset") int offset);
         @GET("pokemon/{name}")
-        Call<Pokemon> getPokemonDetails(@Path("name") String name);
+        Call<PokemonDetails> getPokemonDetails(@Path("name") String name);
 }

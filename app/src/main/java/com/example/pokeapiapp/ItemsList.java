@@ -7,10 +7,17 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ItemsList {
-    @JsonProperty("result")
-    private ArrayList<ItemPokemon> result;
+    @JsonProperty("results")
+    private ArrayList<ItemPokemon> results;
+
+    @JsonProperty("count")
+    private int count;
+
+    public int getCount() {
+        return count;
+    }
 
     public ArrayList<ItemPokemon> getResult() {
-        return result;
+        return results;
     }
 }
